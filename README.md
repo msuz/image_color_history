@@ -17,9 +17,10 @@ $ ssh-add ~/.ssh/id_rsa
 $ ssh-add -l
 $ ssh -T git@github.com
 
-$ git clone https://github.com/msuz/image_color_history.
-$ git config remote.origin.url
-https://github.com/msuz/image_color_history.git
+$ git config --global user.name "msuz"
+$ git config --global user.email "msuz@example.com"
+
+$ git clone github:msuz/image_color_history.git
 ```
 
 ## setup python env

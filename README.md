@@ -17,9 +17,15 @@ $ ssh-add ~/.ssh/id_rsa
 $ ssh-add -l
 $ ssh -T git@github.com
 
+$ echo '.DS_Store' > ~/.gitignore_global
+$ git config --global core.excludesfile ~/.gitignore_global 
+
 $ git config --global user.name "msuz"
 $ git config --global user.email "msuz@example.com"
+```
 
+## clone git repository
+```
 $ git clone github:msuz/image_color_history.git
 ```
 

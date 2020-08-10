@@ -17,7 +17,8 @@ $ ssh-add ~/.ssh/id_rsa
 $ ssh-add -l
 $ ssh -T git@github.com
 
-$ echo '.DS_Store' > ~/.gitignore_global
+$ echo '.DS_Store' >> ~/.gitignore_global
+$ echo '__pycache__' >> ~/.gitignore_global
 $ git config --global core.excludesfile ~/.gitignore_global 
 
 $ git config --global user.name "msuz"
@@ -43,13 +44,23 @@ opencv-python==4.3.0.36
 
 ## run unittest
 ```
-$ python -m unittest -v tests/test_ich.py
+$ python -m unittest -v tests.test_ich
 test_default_values (tests.test_ich.ImageColorHistoryTestCase) ... ok
-test_get_image_history (tests.test_ich.ImageColorHistoryTestCase) ... ok
+test_get_pixcel_bgr_list (tests.test_ich.ImageColorHistoryTestCase) ... ok
 test_load_image_data (tests.test_ich.ImageColorHistoryTestCase) ... ok
 
 ----------------------------------------------------------------------
 Ran 3 tests in 0.001s
+
+OK
+```
+
+```
+$ python -m unittest -v tests.test_ich.ImageColorHistoryTestCase.test_default_values
+test_default_values (tests.test_ich.ImageColorHistoryTestCase) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
 
 OK
 ```

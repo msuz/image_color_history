@@ -67,5 +67,11 @@ OK
 
 ## run app
 ```
-todo
+todo: update
+
+$ python pixel.py 
+pixel.py
+[[196 196 196   0   0   0]
+ [114 114 114 192 192 192]
+ [ 68  68  68 255 255 255]]
 ```

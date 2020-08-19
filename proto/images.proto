@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package images;
+
+service Gateway {
+    rpc Reply (ReplyRequest) returns (ReplyResponse) {}
+}
+
+message ReplyRequest {
+    string path = 1;
+}
+
+message ReplyResponse {
+    string files = 1;
+}
